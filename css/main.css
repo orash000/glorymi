@@ -48,17 +48,17 @@ body {
 .hero-line-desktop {
   height: 100vh;
   width: 177vh;
-  background-image: url("../img/hero-img.png");
+  background-image: url("/img/hero-img.png");
 }
 
 .hero-line-tablet {
   display: none;
-  background-image: url("../img/hero-tablet.png");
+  background-image: url("/img/hero-tablet.png");
 }
 
 .hero-line-mobile {
   display: none;
-  background-image: url("../img/hero-mobile.png");
+  background-image: url("/img/hero-mobile.png");
 }
 
 /* SVG Animation */
@@ -89,7 +89,7 @@ body {
   bottom: 0;
   right: 0;
 
-  background-image: url("../img/back.jpg");
+  background-image: url("/img/back.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
