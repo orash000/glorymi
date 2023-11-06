@@ -1,0 +1,110 @@
+/* Media Desktop */
+@media screen and (max-width: 2560px) {
+  .item-1 {
+    top: 40%;
+    left: 28%;
+  }
+
+  .item-2 {
+    top: 68%;
+    left: 37%;
+  }
+
+  .item-3 {
+    top: 45%;
+    right: 20%;
+  }
+
+  .item-4 {
+    top: 80%;
+    right: 23%;
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  .item-1 {
+    top: 40%;
+    left: 22%;
+  }
+
+  .item-2 {
+    top: 68%;
+    left: 32%;
+  }
+
+  .item-3 {
+    top: 45%;
+    right: 20%;
+  }
+
+  .item-4 {
+    top: 80%;
+    right: 23%;
+  }
+}
+
+@media screen and (max-width: 1540px) {
+  .item-1 {
+    top: 40%;
+    left: 12%;
+  }
+
+  .item-2 {
+    top: 68%;
+    left: 20%;
+  }
+
+  .item-3 {
+    top: 45%;
+    right: 12%;
+  }
+
+  .item-4 {
+    top: 80%;
+    right: 18%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .item-1 {
+    top: 40%;
+    left: 2%;
+  }
+
+  .item-2 {
+    top: 68%;
+    left: 15%;
+  }
+
+  .item-3 {
+    top: 45%;
+    right: 4%;
+  }
+
+  .item-4 {
+    top: 80%;
+    right: 10%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .item-1 {
+    top: 20%;
+    left: 2%;
+  }
+
+  .item-2 {
+    top: 20%;
+    left: 2%;
+  }
+
+  .item-3 {
+    top: 20%;
+    left: 2%;
+  }
+
+  .item-4 {
+    top: 20%;
+    left: 2%;
+  }
+}

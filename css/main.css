@@ -1,0 +1,128 @@
+@import "fonts.css";
+@import "reset.css";
+@import "vars.css";
+
+/* Blocks */
+@import "blocks/header.css";
+@import "blocks/menu.css";
+@import "blocks/items-media.css";
+
+body {
+  color: var(--white);
+  background: var(--background);
+  font-family: 'Copperplate', sans-serif;
+}
+
+.container {
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Line */
+.line {
+  overflow: hidden;
+  position: relative;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+}
+
+.hero-line {
+  overflow: hidden;
+  position: absolute;
+  align-self: end;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-line-desktop {
+  height: 100vh;
+  width: 177vh;
+  background-image: url("/img/hero-img.png");
+}
+
+.hero-line-tablet {
+  display: none;
+  background-image: url("/img/hero-tablet.png");
+}
+
+.hero-line-mobile {
+  display: none;
+  background-image: url("/img/hero-mobile.png");
+}
+
+/* SVG Animation */
+.svg-item {
+  z-index: 4;
+  stroke-dasharray: 200;
+  stroke-dashoffset: 800;
+  filter: blur(1px);
+}
+
+.svg-main-item {
+  z-index: -2;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 5000;
+  animation: anim 12s linear infinite;
+  filter: blur(4px);
+}
+
+/* Background */
+.bg {
+  z-index: -1;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  background-image: url("/img/back.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Keyframes */
+@keyframes anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Media */
+@media screen and (max-width: 768px) {
+  .hero-line-tablet {
+    display: block;
+  }
+
+  .hero-line-desktop {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .hero-line-mobile {
+    display: block;
+  }
+
+  .hero-line-desktop {
+    display: none;
+  }
+
+  .hero-line-tablet {
+    display: none;
+  }
+}

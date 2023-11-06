@@ -1,0 +1,66 @@
+<svg class="hero-line hero-line-tablet" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 730 810" style="enable-background:new 0 0 730 810;" xml:space="preserve">
+
+	<style type="text/css">
+		.st1 { fill: none; stroke: rgba(255, 255, 255, 0.6); stroke-width: 6; stroke-miterlimit: 10; }
+		.st2 { fill: none; stroke: rgba(255, 255, 255, 0.8); stroke-width: 4; stroke-miterlimit: 10; }
+		.st3 { fill: none; stroke: rgba(255, 255, 255, 0.8); stroke-width: 2; stroke-miterlimit: 10; }
+
+		.svg-item {
+			stroke-dasharray: 200;
+			stroke-dashoffset: 800;
+			filter: blur(1px);
+		}
+
+		.svg-main-item {
+			stroke-dasharray: 1000;
+			stroke-dashoffset: 5000;
+			animation: anim 12s linear infinite;
+			filter: blur(4px);
+		}
+
+		path {
+			pointer-events: all;
+		}
+
+		/* Keyframes */
+		@keyframes anim {
+			to {
+				stroke-dashoffset: 0;
+			}
+		}
+	</style>
+
+	<g id="layer">
+
+		<!--	ОБВОДКА	-->
+		<path class="st1 svg-main-item" d="M0,647.59c0,0,25-12.59,37-14.59s53-7,67-8s53-9,93-34s54-34,61-55s14-46,12-52s-37-32-49-65s-19-53-19-53
+		s-10-5-19-24s-15-40-16-46s-4-23-8-32s-4-15-2-20s-3-19-4-39s2-32,5-46s0-27,6-41s18-39,27-49s34-35,45-39s17-5,24-12s22-12,35-14
+		s55-6,89,4s65,26,83,44s28,35,33,53s11,32,15,44s4,37,4,39s-2,12,2,14s13,3,12,21s-3,39-4,52s0,21-4,32s-6,17-14,23s-15,7-14,18
+		s10,1,10,1s4-3,7,9s10,18,11,24s0,15,3,19s4,9,4,9s3,23,7-13s12-35,12-35s5-3,7-5s9,6,7,16s-0.73,22-1.86,32s1.86,50,3.86,61
+		s8,27,12,40s0,27-3,40s4.68,35.72,4.68,35.72S597,589,606,592s29,9,48,8s76,5.34,76,5.34V810H0V647.59z"/>
+
+
+		<!--	БРОВИ	-->
+		<path class="st2 svg-item" d="M203,276c0,0,11-12,19-14s43,1,51,5s28,20,28,20s-40-6-51-7s-36-2-41,2s-10,7-10,7L203,276z"/>
+		<path class="st2 svg-item" d="M359,279c0,0,15-19,24-25s30-19,39-19s43,9,43,9s-9,1-19,4s-40,11-49,17s-41,18-41,18L359,279z"/>
+
+
+		<!--	ВЕКИ	-->
+		<path class="st2 svg-item" d="M216,321c0,0,16,14.79,34,13.89C268,334,287,328,296,322s11-8,11-8s5,16.41-6,26.71S275,357,258,356
+		s-26,3-35-9S216,321,216,321z"/>
+		<path class="st2 svg-item" d="M368,309c0,0,27,4,45,3s46-26,46-26s6,14-2,24s-20,22-32,22s-33-1-44-4S368,309,368,309z"/>
+
+
+		<!--	ГУБЫ	-->
+		<path class="st2 svg-item" d="M284,430c0,0,7,8,16,6s24.66-5,29.83-6s10.17-4,17.17-2s15,1,17-2s11-2,16-2s26-2,32-2s12-6,12-6s-14,27-19,33
+		s-13,15-24,20s-35,7-49,3s-27-19-27-19L284,430z"/>
+
+
+		<!--	НОГТИ	-->
+		<path class="st3 svg-item" d="M446,572c0,0,6-3,13-5s15.22-3,17.61,0c2.39,3,6.39,8-1.61,11s-20,5-26,2S446,572,446,572z"/>
+		<path class="st3 svg-item" d="M491,576c0,0,5-6,10-9s12-8,16-9s9,2,7,5s-8,9-8,9s-10,4-15,5S491,576,491,576z"/>
+		<path class="st3 svg-item" d="M488,590c0,0,9.97-7.03,12.48-8.52C503,580,514,577,517,578s4,3,3,5s-4,5-8,6S488,590,488,590z"/>
+		<path class="st3 svg-item" d="M469,619c0,0,2-6,7-8s16-5,19-4s6,5,4,7s-5,6-11,6S469,619,469,619z"/>
+
+	</g>
+</svg>
