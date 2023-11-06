@@ -1,5 +1,4 @@
 const bg = document.querySelector('.bg')
-window.addEventListener('deviceorientation', handleOrientation)
 
 const handleOrientation = (e) => {
   const beta = e.beta
@@ -8,3 +7,5 @@ const handleOrientation = (e) => {
 
   bg.style.transform = `translate(${gamma * parallaxStrength}px, ${beta * parallaxStrength}px)`
 }
+
+window.addEventListener('deviceorientation', handleOrientation)
