@@ -27,7 +27,7 @@ if (window.DeviceOrientationEvent) {
 function handleOrientation(event) {
   const beta = event.beta
   const gamma = event.gamma
-  const parallaxStrength = 60
+  const parallaxStrength = 2
 
   bg.style.transform = `translate(${gamma * parallaxStrength}px, ${beta * parallaxStrength}px)`
 }
