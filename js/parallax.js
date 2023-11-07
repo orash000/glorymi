@@ -17,7 +17,7 @@ document.addEventListener('mousemove', (e) => {
 
 document.addEventListener('touchmove', (e) => {
   const touch = e.touches[0]
-  const parallaxStrength = 50
+  const parallaxStrength = 30
 
   if (touch) {
     const touchX = touch.clientX
