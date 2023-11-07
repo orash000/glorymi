@@ -1,5 +1,6 @@
 const bg = document.querySelector('.bg')
 
+// Эффект параллакса с помощью мыши
 document.addEventListener('mousemove', (e) => {
   const parallaxStrength = 90
 
@@ -15,6 +16,7 @@ document.addEventListener('mousemove', (e) => {
   bg.style.transform = `translate(${moveX}px, ${moveY}px)`
 })
 
+// Эффект параллакса с помощью движения пальцев
 // document.addEventListener('touchmove', (e) => {
 //   const touch = e.touches[0]
 //   const parallaxStrength = 30
@@ -33,27 +35,18 @@ document.addEventListener('mousemove', (e) => {
 //   }
 // })
 
-// Функция для обработки данных с гироскопа
-function handleGyroscope(event) {
-  const parallaxStrength = 30;
-
-  // Получить данные с гироскопа
-  const gyroscopeData = event.alpha !== null ? event : event.beta !== null ? event : event.gamma !== null ? event : null;
-
-  if (gyroscopeData) {
-    // Используйте данные с гироскопа для расчета движения
-    const moveX = gyroscopeData.gamma / parallaxStrength;
-    const moveY = gyroscopeData.beta / parallaxStrength;
-
-    // Обновите положение фона
-    bg.style.transform = `translate(${moveX}px, ${moveY}px)`;
-  }
+// Эффект параллакса с помощью гироскопа
+if (window.DeviceOrientationEvent) {
+  window.addEventListener('deviceorientation', handleOrientation)
+} else {
+  console.log('Гироскоп не поддерживается на этом устройстве.')
+  alert("Гироскоп не поддерживается")
 }
 
-// Проверьте, поддерживается ли устройство гироскоп
-if (window.DeviceOrientationEvent) {
-  // Добавьте слушателя события для обработки данных гироскопа
-  window.addEventListener('deviceorientation', handleGyroscope);
-} else {
-  alert("Устройство не поддерживает гироскоп.");
+function handleOrientation(event) {
+  const beta = event.beta
+  const gamma = event.gamma
+  const parallaxStrength = 10
+
+  bg.style.transform = `translate(${gamma * parallaxStrength}px, ${beta * parallaxStrength}px)`
 }
