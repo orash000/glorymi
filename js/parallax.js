@@ -2,7 +2,7 @@ const bg = document.querySelector('.bg')
 
 // Эффект параллакса с помощью мыши
 document.addEventListener('mousemove', (e) => {
-  const parallaxStrength = 90
+  const parallaxStrength = 110
 
   const mouseX = e.clientX
   const mouseY = e.clientY
