@@ -2,7 +2,7 @@ const bg = document.querySelector('.bg')
 
 // Эффект параллакса с помощью мыши
 document.addEventListener('mousemove', (e) => {
-  const parallaxStrength = 110
+  const parallaxStrength = 250
 
   const mouseX = e.clientX
   const mouseY = e.clientY
@@ -27,7 +27,7 @@ if (window.DeviceOrientationEvent) {
 function handleOrientation(event) {
   const beta = event.beta
   const gamma = event.gamma
-  const parallaxStrength = 0.5
+  const parallaxStrength = 0.4
 
   bg.style.transform = `translate(${gamma * parallaxStrength}px, ${beta * parallaxStrength}px)`
 }
