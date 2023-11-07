@@ -90,7 +90,7 @@ body {
   bottom: 0;
   right: 0;
 
-  background-image: url("/img/back.jpg");
+  background-image: url("/img/back.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -111,6 +111,12 @@ body {
 
   .hero-line-desktop {
     display: none;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .bg {
+    background-image: url("/img/back-mobile.png");
   }
 }
 
