@@ -29,7 +29,7 @@ function handleOrientation(event) {
   const gamma = event.gamma
   const parallaxStrength = 0.7
 
-  if (Math.abs(beta) < 10 && Math.abs(gamma) < 10) {
+  if (Math.abs(beta) < 80 && Math.abs(gamma) < 80) {
     bg.style.transform = `translate(${gamma * parallaxStrength}px, ${beta * parallaxStrength}px)`
   }
 }
